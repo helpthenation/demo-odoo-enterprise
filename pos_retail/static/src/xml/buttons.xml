@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <!--<t t-name="button_payment">-->
+    <!--<div class="btn highlight">-->
+    <!--<i class='fa fa-truck' /> Payment-->
+    <!--</div>-->
+    <!--</t>-->
+
+    <t t-name="button_create_internal_transfer">
+        <div class="btn">
+            <i class='fa fa-truck' />  Internal Transfer
+        </div>
+    </t>
+
+    <t t-name="button_create_purchase_order">
+        <div class="btn">
+            <i class='fa fa-truck' />  Create PO
+        </div>
+    </t>
+
+    <t t-name="button_create_sale_order">
+        <div class="btn">
+            <i class='fa fa-shopping-bag' />  Create SO
+        </div>
+    </t>
+
+    <t t-name="button_combo">
+        <div class="btn">
+            <i class='fa fa-sliders' />  Add Pack/Combo
+        </div>
+    </t>
+
+    <t t-name="button_combo_item_add_lot">
+        <div class="btn">
+            <i class='fa fa-sliders' />  Add lot combo items
+        </div>
+    </t>
+
+    <t t-name="button_global_discount">
+        <div class="btn">
+            <i class='fa fa-bolt' />  Global Discounts
+        </div>
+    </t>
+
+    <t t-name="button_print_voucher">
+        <div class="btn">
+            <i class='fa fa-print' />  Print Voucher
+        </div>
+    </t>
+
+    <t t-name="button_kitchen_receipt_screen">
+        <div class="btn">
+            <i class='fa fa-gift' />  Kitchen Receipt
+        </div>
+    </t>
+
+    <t t-name="button_lock_unlock_order">
+        <div class="btn">
+            <i class='fa fa-lock' />  Lock order
+        </div>
+    </t>
+
+    <t t-name="reward_button">
+        <div class="btn">
+            <i class='fa fa-gift' />  Rewards Program
+        </div>
+    </t>
+
+    <t t-name="button_change_unit">
+        <div class="btn">
+            <i class='fa fa-sliders' />  Change Unit
+        </div>
+    </t>
+
+    <t t-name="button_line_note">
+        <div class='btn'>
+            <i class='fa fa-edit' />  Add Line Note
+        </div>
+    </t>
+
+    <t t-name="button_order_note">
+        <div class='btn'>
+            <i class='fa fa-edit' />  Add Order Note
+        </div>
+    </t>
+
+    <t t-name="button_order_signature">
+        <div class="btn">
+            <i class='fa fa-edit' />  Signature order
+        </div>
+    </t>
+
+    <t t-name="button_print_receipt">
+        <div class="btn">
+            <i class='fa fa-print' />  Print Receipt
+        </div>
+    </t>
+
+    <t t-name="button_add_variants">
+        <div class="btn">
+            <i class='fa fa-sliders' />  Add Variants
+        </div>
+    </t>
+
+    <t t-name="button_promotion">
+        <div class="btn">
+            <i class='fa fa-gift' />  Add Promotions
+        </div>
+    </t>
+
+    <t t-name="button_register_payment">
+        <div class='btn'>
+            <i class='fa fa-tag' />  Register payment
+        </div>
+    </t>
+
+    <t t-name="button_set_tags">
+        <div class="btn">
+            <i class='fa fa-sliders' />  Add Tags
+        </div>
+    </t>
+
+    <t t-name="button_return_products">
+        <div class="btn">
+            <i class='fa fa-search' />  Return Products
+        </div>
+    </t>
+
+    <t t-name="button_go_invoice_screen">
+        <div class="btn">
+            <i class='fa fa-search' />  Invoices
+        </div>
+    </t>
+    <t t-name="product_operation_button">
+        <div class="btn">
+            <i class='fa fa-pencil-square-o' />  Products
+        </div>
+    </t>
+
+    <t t-name="button_print_test">
+        <div class="btn">
+            <i class='fa fa-bug' />Test Printer
+        </div>
+    </t>
+
+    <t t-name="button_selection_pricelist">
+        <div class="btn">
+            <i class='fa fa-sliders' /> <t t-esc='widget.get_order_pricelist()'/>
+        </div>
+    </t>
+
+    <!-- change stype button core -->
+    <t t-extend="DiscountButton">
+        <t t-jquery=".js_discount" t-operation="replace">
+            <div class="btn"><i class='fa fa-tag' />  Discount</div>
+        </t>
+    </t>
+
+    <t t-extend="SetPricelistButton">
+        <t t-jquery=".o_pricelist_button" t-operation="replace">
+            <div class="btn"><i class='fa fa-th-list' /> <t t-esc='widget.get_current_pricelist_name()'/></div>
+        </t>
+    </t>
+
+    <t t-name="button_lock_screen">
+        <div class="btn btn-danger">
+            <i class='fa fa-lock' />  Logout screen
+        </div>
+    </t>
+
+    <t t-name="button_print_user_card">
+        <div class="btn btn-warning">
+            <i class='fa fa-print' />  Print user card
+        </div>
+    </t>
+
+    <t t-name="button_daily_report">
+        <div class="btn btn-success">
+            <i class='fa fa-signal' />  Daily report
+        </div>
+    </t>
+
+    <t t-name="button_clear_order">
+        <div class="btn">
+            <i class='fa fa-trash' />  Clean empty order
+        </div>
+    </t>
+
+
+    <t t-name="button_booking_order">
+        <div class="btn">
+            <i class='fa fa-shopping-basket' />  Booking order
+        </div>
+    </t>
+
+    <t t-name="button_go_sale_orders_screen">
+        <div class="btn">
+            <i class="fa fa-book"/>
+            Booked orders
+            <i class="material-icons">notifications</i>
+            <span class="notification booked_orders">0</span>
+        </div>
+    </t>
+
+    <t t-name="button_go_pos_orders_screen">
+        <div class="btn">
+            <i class='fa fa-search' /> Return orders
+        </div>
+    </t>
+
+    <t t-name="button_delivery_order">
+        <div class="btn">
+            <i class='fa fa-truck' /> Delivery order
+        </div>
+    </t>
+
+    <t t-name="button_lock_session">
+        <div class="btn">
+            <i class='fa fa-lock' /> Lock session
+        </div>
+    </t>
+
+    <t t-extend="SetFiscalPositionButton">
+        <t t-jquery="div[class*='control-button']" t-operation="replace">
+            <div class="btn">
+                <i class='fa fa-book' /> <t t-esc='widget.get_current_fiscal_position_name()'/>
+            </div>
+        </t>
+    </t>
+
+    <t t-name="button_set_location"> <!-- change stock location -->
+        <div class='btn'>
+            <i class='fa fa-sitemap' /> <t t-esc="widget.pos.get_location()['name']"/>
+        </div>
+    </t>
+
+    <t t-name="button_restart_session">
+        <div class='btn'>
+            <i class='fa fa-user' /> <t t-esc="widget.pos.get_config()['name']"/>
+        </div>
+    </t>
+
+</templates>
